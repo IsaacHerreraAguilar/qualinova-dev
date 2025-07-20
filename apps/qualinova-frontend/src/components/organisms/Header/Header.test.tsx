@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Header from "@/components/organisms/Header/Header";
+import Header from "@/components/organisms/header/header";
 
 // Mock Next.js Image component
 jest.mock("next/image", () => ({
@@ -60,7 +60,7 @@ describe("Header Component", () => {
       "justify-center",
       "border-b-2",
       "border-[#1c2537]",
-      "transition-colors",
+      "transition-colors"
     );
   });
 
@@ -75,14 +75,14 @@ describe("Header Component", () => {
       "flex-col",
       "w-full",
       "max-w-[75%]",
-      "py-4",
+      "py-4"
     );
     expect(flexContainer).toHaveClass(
       "flex",
       "flex-col",
       "md:flex-row",
       "items-center",
-      "w-full",
+      "w-full"
     );
   });
 
